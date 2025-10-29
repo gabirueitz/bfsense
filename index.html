@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BF Sense - Monitoramento de Biogás</title>
+
+		<link rel="stylesheet" href="./src/style.css" />
+	</head>
+	<body>
+		<header class="container">
+			<div class="logo">
+				<img src="./src/img/logo.png" alt="Logo BFSense" />
+			</div>
+			<nav>
+				<a href="#diferenciais">Diferenciais</a>
+				<a href="#parceria">Validação TRL</a>
+				<a href="#contato" class="cta-button">Demonstração</a>
+			</nav>
+		</header>
+
+		<section id="hero">
+			<div class="container">
+				<h1>
+					Garanta a <strong>qualidade</strong> e <strong>previsibilidade</strong> do Biogás em toda a sua cadeia
+					de fornecimento.
+				</h1>
+				<h2>
+					Monitoramento IoT acessível que transforma biodigestores de pequenos
+					produtores em fontes de suprimento confiáveis e rastreáveis para sua
+					empresa.
+				</h2>
+				<img
+					src="./src/img/sensor_instalado.jpg"
+					alt="Protótipo BFSense instalado na tubulação de biogás."
+					class="hero-image" />
+				<div class="details">
+					<a href="#contato" class="cta-button"
+						>Solicite uma Demonstração do Painel B2B</a
+					>
+					<p>*Tecnologia validada em TRL 4 e pronta para Projeto Piloto.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="problema" class="section">
+			<div class="container">
+				<h2>O Risco Oculto da sua Cadeia de Biogás é a Falta de Dados.</h2>
+				<div class="features-grid">
+					<div class="feature-item">
+						<h3>Risco de Qualidade (H₂S)</h3>
+						<p>
+							Gás contaminado danifica equipamentos, exige pré-tratamento caro e
+							compromete a segurança da sua captação.
+						</p>
+					</div>
+					<div class="feature-item">
+						<h3>Ineficiência Logística e Auditoria</h3>
+						<p>
+							Altos custos e tempo gasto com deslocamentos e coleta manual de
+							dados nas pequenas propriedades.
+						</p>
+					</div>
+					<div class="feature-item">
+						<h3>Interrupções no Suprimento</h3>
+						<p>
+							Falhas no biodigestor causam paradas não planejadas e quebram a
+							previsibilidade da sua matéria-prima.
+						</p>
+					</div>
+				</div>
+				<h2 style="margin-top: 60px">
+					BF Sense: Visibilidade Total e Controle Preditivo.
+				</h2>
+                <div class="prototype-img">
+                    <img src="./src/img/sensor.png" alt="Protótipo do Sensor BFSense" />
+                </div>
+			</div>
+		</section>
+
+		<section id="diferenciais" class="section">
+			<div class="container">
+				<h2>Nossos Diferenciais: Benefícios Diretos para a Operação</h2>
+				<div class="features-grid">
+					<div class="feature-item">
+						<h3>Monitoramento de H₂S em Tempo Real</h3>
+						<p>
+							<strong>Proteção de Ativos</strong>: Reduz o risco de corrosão em compressores
+							e equipamentos de purificação caros.
+						</p>
+					</div>
+					<div class="feature-item">
+						<h3>Rastreabilidade de Geração (CH₄/Volume)</h3>
+						<p>
+							<strong>Controle Contratual</strong>: Garante que o biogás comprado esteja
+							sempre dentro da conformidade de qualidade e volume.
+						</p>
+					</div>
+					<div class="feature-item">
+						<h3>Alerta Preditivo e Proativo</h3>
+						<p>
+							<strong>Estabilidade Operacional</strong>: Alertas chegam à sua equipe e ao
+							produtor, permitindo correção antes da interrupção total do
+							suprimento.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="parceria">
+			<div class="container">
+				<h2>Prontidão Tecnológica Comprovada.</h2>
+				<p>
+					Nossa tecnologia IoT demonstrou eficácia na leitura e transmissão de
+					dados de gás em ambiente simulado e de laboratório (**TRL 4**).
+				</p>
+				<p style="font-size: 1.2em; font-weight: bold; margin: 30px 0">
+					Seja nosso Parceiro Co-Desenvolvedor:
+				</p>
+				<p>
+					Pague a Taxa de Piloto para ter acesso exclusivo à solução e molde o
+					sistema de monitoramento para suas necessidades específicas de compra.
+				</p>
+				<a href="#contato" class="cta-button"
+					>Agende uma Reunião sobre a Proposta de Piloto</a
+				>
+			</div>
+		</section>
+
+		<section id="contato">
+			<div class="container">
+				<h2>
+					Comece a Construir uma Cadeia de Suprimentos de Biogás Previsível.
+				</h2>
+				<form id="contact-form">
+					<input type="text" name="nome" placeholder="Seu Nome" required />
+					<input type="text" name="empresa" placeholder="Empresa" required />
+					<input type="text" name="cargo" placeholder="Cargo" required />
+					<input
+						type="email"
+						name="email"
+						placeholder="E-mail Corporativo"
+						required />
+					<input type="tel" name="telefone" placeholder="Telefone" required />
+					<button type="submit" class="cta-button" style="width: 100%">
+						Agende uma Demonstração Personalizada
+					</button>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<p>&copy; 2025 BF Sense | Monitoramento de Bioenergia.</p>
+			</div>
+		</footer>
+
+		<script>
+			// JS simples: Lógica de envio do formulário (apenas um alerta como placeholder)
+			document
+				.getElementById("contact-form")
+				.addEventListener("submit", function (event) {
+					event.preventDefault();
+					alert(
+						"Formulário enviado! A BF Sense entrará em contato em breve para agendar sua demonstração."
+					);
+					// Aqui você integraria o código real para enviar os dados para seu CRM/backend.
+				});
+		</script>
+	</body>
+</html>
