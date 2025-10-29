@@ -162,7 +162,7 @@ header nav a {
 }
 
 #contato input {
-	width: 100%;
+	width: 95%;
 	padding: 12px;
 	margin-bottom: 15px;
 	border: 1px solid #ccc;
@@ -176,4 +176,115 @@ footer {
 	background-color: #333;
 	color: white;
 	font-size: 0.9em;
+}
+
+
+/* ======================================================= */
+/* MEDIA QUERIES para Responsividade (Max-width: 600px)    */
+/* ======================================================= */
+
+@media (max-width: 600px) {
+    
+    /* 1. Corpo e Tipografia */
+    body {
+        padding: 0 10px; /* Pequena margem lateral no corpo */
+    }
+
+    header .logo img {
+        height: 80px; /* Reduz o tamanho do logo no celular */
+    }
+
+    header nav .cta-button {
+        margin: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    /* Reduz o tamanho da fonte para melhor legibilidade em telas pequenas */
+    #hero h1 {
+        font-size: 1.8em;
+        line-height: 1.2;
+    }
+
+    #hero h2 {
+        font-size: 1.1em;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    
+    .section h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1em;
+        width: 85%; /* Botão CTA ocupa a largura total no celular */
+    }
+
+    /* 2. Header (Navegação) */
+    header {
+        flex-direction: column; /* Coloca o logo em cima e o menu embaixo */
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    header nav a {
+        margin: 0 5px;
+        font-size: 0.9em;
+    }
+
+    /* 3. Seção Hero (A mais importante) */
+    #hero .container {
+        /* Muda o grid para uma única coluna */
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto; /* Reorganiza as linhas */
+        text-align: center;
+    }
+    
+    /* Reorganiza a ordem dos elementos para que o texto venha antes da imagem */
+    #hero h1 {
+        grid-area: 1 / 1 / 2 / 2; /* Primeiro elemento */
+        padding-top: 20px;
+    }
+
+    #hero h2 {
+        grid-area: 2 / 1 / 3 / 2; /* Segundo elemento */
+    }
+
+    .hero-image {
+        grid-area: 3 / 1 / 4 / 2; /* Imagem fica no meio */
+        max-width: 90%; /* Aumenta a imagem para ocupar mais espaço */
+    }
+    
+    .details {
+        grid-area: 4 / 1 / 5 / 2; /* Botão CTA abaixo da imagem */
+    }
+    
+    /* 4. Grades de Destaques (Features) */
+    .features-grid {
+        flex-direction: column; /* Coloca os itens um abaixo do outro */
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 90%; /* Ocupa quase a largura total da tela */
+        margin: 10px 0; /* Espaçamento vertical entre os itens */
+    }
+
+    /* 5. Formulário de Contato */
+    #contato form {
+        max-width: 90%; /* Garante que o formulário caiba na tela */
+    }
+    
+    #contato input {
+        width: 94%; /* Ajusta a largura do input dentro do formulário */
+    }
 }
